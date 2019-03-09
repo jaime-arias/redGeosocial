@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:100, 300, 400, 500, 700, 900|Roboto:100, 300, 400, 500, 700, 900');
+@import url('//fonts.googleapis.com/css?family=Playfair+Display|Roboto');
 
 body{
-  font-family: 'Roboto:100, 300, 400, 500, 700, 900', sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding:0;
   margin:0;
   background-color:#f4f4f4;
@@ -87,7 +87,7 @@ header a:hover{
 /* Showcase */
 #showcase{
   background: rgba(0,0,0, .05);
-  font-family: 'Playfair Display:100, 300, 400, 500, 700, 900', serif;
+  font-family: 'Playfair+Display:100, 300, 400, 500, 700, 900', serif;
   min-height:400px;
   text-align:center;
   color:#ffffff;
