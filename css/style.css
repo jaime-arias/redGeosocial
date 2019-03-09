@@ -1,11 +1,11 @@
-@import url('//fonts.googleapis.com/css?family=Playfair+Display|Roboto');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i|Playfair+Display');
 
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   padding:0;
   margin:0;
   background-color:#f4f4f4;
-  background:url('../img/showcase.jpg') no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.35)), url('../img/showcase.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -41,8 +41,8 @@ ul{
 /* Header **/
 header{
   color:#ffffff;
-  padding-top:30px;
-  min-height:70px;
+  padding-top:20px;
+  min-height:62px;
   border-bottom:#e8491d 3px solid;
   background: rgba(0,0,0, .65);
 }
@@ -87,7 +87,7 @@ header a:hover{
 /* Showcase */
 #showcase{
   background: rgba(0,0,0, .05);
-  font-family: 'Playfair+Display:100, 300, 400, 500, 700, 900', serif;
+  font-family: 'IBM Plex Serif', serif;
   min-height:400px;
   text-align:center;
   color:#ffffff;
@@ -103,6 +103,7 @@ header a:hover{
 #showcase p{
   font-size:20px;
   font-weight: 500;
+  font-style: sans-serif;
 }
 
 /* Newsletter */
@@ -182,8 +183,8 @@ ul#perfil li{
 }
 
 footer{
-  padding:20px;
-  margin-top:20px;
+  padding:5px;
+  margin-top:5px;
   color:#ffffff;
   background-color:#e8491d;
   text-align: center;
