@@ -5,16 +5,105 @@ body{
   padding:0;
   margin:0;
   background-color:#f4f4f4;
-  background:url('../img/showcase.jpg') no-repeat;
+  background:url('../img/fr.jpg') no-repeat;
   background-size: cover;
 }
 
 /* Global */
 .container{
-  width:80%;
+  width:50%;
   margin:auto;
   overflow:hidden;
 }
+/* Login */
+.login-page {
+  position: relative;
+  width: 400px;
+  padding: 5px, 5px 25px 5px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: rgba(0,0,0, .65);
+  max-width: 500px;
+  margin: 0 auto 100px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #f5185a;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #d60544;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #f5185a;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+
+
+.container:ginbefore, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+
 
 ul{
   margin:0;
@@ -23,7 +112,7 @@ ul{
 
 .button_1{
   height:38px;
-  background:#e8491d;
+  background:#f5185a;
   border:0;
   padding-left: 20px;
   padding-right:20px;
@@ -41,9 +130,9 @@ ul{
 /* Header **/
 header{
   color:#ffffff;
-  padding-top:30px;
-  min-height:70px;
-  border-bottom:#e8491d 3px solid;
+  padding-top:20px;
+  min-height:60px;
+  border-bottom:#f5185a 3px solid;
   background: rgba(0,0,0, .65);
 }
 
@@ -75,7 +164,7 @@ header nav{
 }
 
 header .highlight, header .current a{
-  color:#e8491d;
+  color:#f5185a;
   font-weight: bold;
 }
 
@@ -83,12 +172,28 @@ header a:hover{
   color:#cccccc;
   font-weight:bold;
 }
+/* Boxes */
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  color:#ffffff;
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:0px,1px,1px,1px;
+}
+
+#boxes .box img{
+  width:90px;
+}
 
 /* Showcase */
 #showcase{
   background: rgba(0,0,0, .05);
-  font-family: 'Playfair Display:100, 300, 400, 500, 700, 900', serif;
-  min-height:400px;
+  font-family: 'Roboto:100, 300, 400, 500, 700, 900', serif;
+  min-height:300px;
   text-align:center;
   color:#ffffff;
 }
@@ -105,58 +210,6 @@ header a:hover{
   font-weight: 500;
 }
 
-/* Newsletter */
-#newsletter{
-  padding:15px;
-  color:#ffffff;
-  background: rgba(0,0,0, .35);
-  border-bottom:#e8491d 3px solid;
-}
-
-#newsletter{
-  font-weight:500;
-  float:right;
-}
-
-#newsletter form {
-  float:right;
-  margin-top:15px;
-}
-
-#newsletter input[type="email"]{
-  padding:4px;
-  height:25px;
-  width:250px;
-}
-
-/* Boxes */
-#boxes{
-  margin-top:20px;
-}
-
-#boxes .box{
-  color:#ffffff;
-  float:left;
-  text-align: center;
-  width:30%;
-  padding:10px;
-}
-
-#boxes .box img{
-  width:90px;
-}
-
-/* Sidebar */
-aside#sidebar{
-  float:right;
-  width:30%;
-  margin-top:10px;
-}
-
-aside#sidebar .quote input, aside#sidebar .quote textarea{
-  width:90%;
-  padding:5px;
-}
 
 /* Main-col */
 article#main-col{
@@ -182,43 +235,13 @@ ul#perfil li{
 }
 
 footer{
-  padding:20px;
-  margin-top:20px;
+  padding:1px 50px 1px 0px;
   color:#ffffff;
-  background-color:#e8491d;
+  background-color:#f5185a;
   text-align: center;
+  min-width: 10px;
 }
 
-/* Media Queries */
-@media(max-width: 768px){
-  header #branding,
-  header nav,
-  header nav li,
-  #newsletter h1,
-  #newsletter form,
-  #boxes .box,
-  article#main-col,
-  aside#sidebar{
-    float:none;
-    text-align:center;
-    width:100%;
-  }
 
-  header{
-    padding-bottom:20px;
-  }
+  
 
-  #showcase h1{
-    margin-top:40px;
-  }
-
-  #newsletter button, .quote button{
-    display:block;
-    width:100%;
-  }
-
-  #newsletter form input[type="email"], .quote input, .quote textarea{
-    width:100%;
-    margin-bottom:5px;
-  }
-}
